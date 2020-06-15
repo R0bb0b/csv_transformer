@@ -1,0 +1,5 @@
+rownum, col2, col3, col4, col5
+1, foo, bar, foobar, barfoo
+2, bar, foobar, barfoo, foo
+3, foobar, barfoo, foo, bar
+4, barfoo, foo, bar, foobar

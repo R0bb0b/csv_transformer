@@ -1,0 +1,34 @@
+{
+    "spec_version":1.0,
+    "transforms":[
+        {
+            "operation":"slugify",
+            "column":"RecordLocation"
+        },
+        {
+            "operation":"f-to-c",
+            "column":"Temperature"
+        },
+        {
+            "operation":"hst-to-unix",
+            "column":"RecordedTime",
+            "date_reference":"RecordedDate",
+            "time_format":"%H:%M:%S",
+            "date_format":"%m/%d/%y"
+        },
+        {
+            "operation":"hst-to-unix",
+            "column":"TimeSunRise",
+            "date_reference":"RecordedDate",
+            "time_format":"%H:%M:%S",
+            "date_format":"%m/%d/%y"
+        },
+        {
+            "operation":"hst-to-unix",
+            "column":"TimeSunSet",
+            "date_reference":"RecordedDate",
+            "time_format":"%H:%M:%S",
+            "date_format":"%m/%d/%y"
+        }
+    ]
+}
